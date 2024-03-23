@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../calc-img2/calc-img2.component.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+   
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    <div>
+        <div class="component">
+            <div class="component2">
+                
+                
+                
+
+                <input class="input" id="input" type="number" placeholder="Peso" [(ngModel)]="peso"  > 
+                
+                <input class="input2" id="input2" type="number" placeholder="Altura" [(ngModel)]="altura" >
+
+                
+
+
+                
+
+
+
+                <button id="button" type="button" class="btn btn-primary"  (click)="IMC()" style="width: 200px; 
+                height: 25px;
+                box-shadow: 0 4px 12px   black ;
+                margin-top: 20px;
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                margin-left: 50px;
+                position: fixed;"
+                >Calcular</button>
+               
+
+
+                <div class="component3" id="popup">
+                    <div *ngIf="resposta == 'a'">
+
+                        
+                        
+                        
+                        <div class="alert alert-danger" role="alert" >
+                            Abaixo do peso Ideal
+                            <button id="button2" class="bi bi-x-circle-fill" (click)="click2()" style="height: 32px;
+                width: 32px;
+                border-radius: 100%;
+                background-color: red; 
+                left: 340px;
+            
+
+                position: fixed;"
+                ></button>
+                        </div>
+                        
+                        <img class="img" src="../../assets/baixo_peso.jpg" >
+                        
+             
+                        
+                    
+                    </div>        
+                    <div *ngIf="resposta == 'b'">
+                        <div class="alert alert-success" role="alert" >
+                            Peso Ideal
+                        </div>
+                        <img class="img" src="../../assets/peso_ideal.jpg" >
+                    
+                    </div>   
+                    <div *ngIf="resposta == 'c'">
+                        <div class="alert alert-warning" role="alert">
+                            Sobrepeso
+                        </div>
+                        <img class="img" src="../../assets/sobrepeso.jpg" >
+                    
+                    </div>   
+                    <div *ngIf="resposta == 'd'">
+                        <div class="alert alert-danger" role="alert" >
+                            Obesidade grau I
+                        </div>
+                        <img class="img" src="../../assets/obeso.jpg" >
+                    
+                    </div>   
+                    <div *ngIf="resposta == 'e'">
+                        <div class="alert alert-danger" role="alert" >
+                            Obesidade grau II
+                        </div>
+                        <img class="img" src="../../assets/obeso2.jpg" >
+                    
+                    </div>   
+                    <div *ngIf="resposta == 'f'">
+                        <div class="alert alert-danger" role="alert" >
+                            Obesidade grau III
+                        </div>
+                        <img class="img" src="../../assets/obeso3.jpg" >
+                    
+                    </div>   
+                </div>
+
+                
+
+                
+
+
+             
+
+        
+                
+
+                
+                
+
+            </div>
+            
+
+
+            
+            
+        </div>
+    </div>
+   
+
+    
+    
+</body>
+
+</html>

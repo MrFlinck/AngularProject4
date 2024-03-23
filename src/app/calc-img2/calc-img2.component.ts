@@ -1,0 +1,75 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-calc-img2',
+  templateUrl: './calc-img2.component.html',
+  styleUrl: './calc-img2.component.css'
+})
+
+
+export class CalcIMG2Component {
+  peso = " ";
+  altura = " "; 
+  resposta = " "; 
+  resultado = 0
+  
+    click2(){
+      const popup = document.getElementById('popup')
+      const button2 = document.getElementById('button2')
+      
+      button2?.addEventListener('click' , function(){
+        popup?.classList.toggle('transition2')
+      })
+     
+    }
+  
+  
+
+
+
+  IMC(){
+    const peso = Number(this.peso)
+    const altura = Number(this.altura)
+    this.resultado = Number(peso)/Math.pow(Number(altura), 2) 
+    
+    const activate = document.getElementById('button')
+    const popup = document.getElementById('popup')
+    
+
+    
+    
+    activate?.addEventListener('click', function(){
+  
+
+      popup?.classList.toggle('transition')
+    
+
+    })
+
+    if( this.resultado > 0 && this.resultado <= 18.5 ){
+      this.resposta = "a"  
+    }
+    else if(this.resultado >= 18.5 && this.resultado <= 24.9){
+      this.resposta = "b"
+    }
+    else if(this.resultado >= 25 && this.resultado <= 29.9){
+      this.resposta = "c"
+
+    }
+    else if(this.resultado >= 30 && this.resultado <= 34.9){
+      this.resposta = "d"
+
+    }
+    else if(this.resultado >= 35 && this.resultado <= 39.9){
+      this.resposta = "e"
+      
+    }
+    else if(this.resultado >= 40){
+      this.resposta = "f"
+      
+    }
+    
+  }
+
+  
+}
