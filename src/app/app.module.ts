@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CalcIMG2Component } from './calc-img2/calc-img2.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgClass } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    NgClass
   ],
   providers: [],
   bootstrap: [AppComponent]

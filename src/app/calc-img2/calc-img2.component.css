@@ -22,14 +22,14 @@
     position: absolute;
 }
 
-.component3{
+#component3{
     background-color: rgb(49, 49, 49);
     box-shadow: 0 4px 12px   black ;
     width: 400px;
     height: 400px;
     border-radius: 10px;
     justify-content: center;
-    left: 35%;
+    left: 740px;
     top: 100%;
     position: fixed;
     
@@ -38,12 +38,12 @@
 
 
 
-.component3.transition{
-    transition: 1s ease;
-    transform: translateY(-130%);
+.transition{
+    transition: 0.8s ease;
+    transform: translateY(-730px);
 }
 
-.component3.transition2{
+.transition2{
     transition: 1s ease;
     transform: translateY(130%);
 }

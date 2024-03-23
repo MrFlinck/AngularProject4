@@ -12,18 +12,23 @@ export class CalcIMG2Component {
   altura = " "; 
   resposta = " "; 
   resultado = 0
+  togglar = false 
   
-    click2(){
-      const popup = document.getElementById('popup')
-      const button2 = document.getElementById('button2')
+    
+  click2(){
       
-      button2?.addEventListener('click' , function(){
-        popup?.classList.toggle('transition2')
-      })
-     
-    }
+    const button2 = document.getElementById('button2')
+    
+    button2?.addEventListener('click' , ()=> {
+      this.togglar=!this.togglar
+ 
   
-  
+    
+      
+    })
+   
+  }
+
 
 
 
@@ -33,15 +38,17 @@ export class CalcIMG2Component {
     this.resultado = Number(peso)/Math.pow(Number(altura), 2) 
     
     const activate = document.getElementById('button')
-    const popup = document.getElementById('popup')
+    
     
 
     
     
-    activate?.addEventListener('click', function(){
+    activate?.addEventListener('click', ()=> {
+
+      this.togglar= !this.togglar
   
 
-      popup?.classList.toggle('transition')
+     
     
 
     })
