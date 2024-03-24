@@ -17,15 +17,7 @@ export class CalcIMG2Component {
     
   click2(){
       
-    const button2 = document.getElementById('button2')
-    
-    button2?.addEventListener('click' , ()=> {
-      this.togglar=!this.togglar
- 
-  
-    
-      
-    })
+    this.togglar= !this.togglar
    
   }
 
@@ -36,22 +28,15 @@ export class CalcIMG2Component {
     const peso = Number(this.peso)
     const altura = Number(this.altura)
     this.resultado = Number(peso)/Math.pow(Number(altura), 2) 
+    this.togglar= !this.togglar
     
-    const activate = document.getElementById('button')
+
     
     
 
     
     
-    activate?.addEventListener('click', ()=> {
-
-      this.togglar= !this.togglar
-  
-
-     
     
-
-    })
 
     if( this.resultado > 0 && this.resultado <= 18.5 ){
       this.resposta = "a"  

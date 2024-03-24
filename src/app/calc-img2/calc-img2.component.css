@@ -39,13 +39,13 @@
 
 
 .transition{
-    transition: 0.8s ease;
+    transition: 1s ease;
     transform: translateY(-730px);
 }
 
 .transition2{
     transition: 1s ease;
-    transform: translateY(130%);
+    transform: translateY(730px);
 }
 
 
