@@ -29,6 +29,7 @@
     height: 400px;
     border-radius: 10px;
     justify-content: center;
+    margin-top: 20px;
     left: 740px;
     top: 100%;
     position: fixed;
@@ -39,12 +40,12 @@
 
 
 .transition{
-    transition: 1s ease;
+    transition: 0.8s ease;
     transform: translateY(-730px);
 }
 
 .transition2{
-    transition: 1s ease;
+    transition: 0.8s ease;
     transform: translateY(730px);
 }
 

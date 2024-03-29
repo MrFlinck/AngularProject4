@@ -45,11 +45,11 @@
 
 
                 
-                    <div *ngIf="resposta == 'a'">
+               
 
-                        
-                        
-                        <div id="component3" [ngClass]="{'transition': togglar, 'transition2': !togglar}" >   
+               
+
+                    <div id="component3" [ngClass]="{'transition': togglar && resposta == 'a', 'transition2': !togglar}" >   
                         <div class="alert alert-danger" role="alert" >
                             Abaixo do peso Ideal
                             <button id="button2" class="bi bi-x-circle-fill" (click)="click2()" style="height: 32px;
@@ -66,15 +66,11 @@
                         <img class="img" src="../../assets/baixo_peso.jpg" >
                         </div>
                         
-             
-                        
-                    
-                    </div>   
                     
                     
 
-                    <div *ngIf="resposta == 'b'">
-                        <div id="component3" [ngClass]="{'transition': togglar, 'transition2': !togglar}" >   
+   
+                        <div id="component3" [ngClass]="{'transition': togglar && resposta == 'b', 'transition2': !togglar}" >   
                         <div class="alert alert-success" role="alert" >
                             Peso Ideal
                             <button id="button2" class="bi bi-x-circle-fill" (click)="click2()" style="height: 32px;
@@ -87,17 +83,16 @@
                 position: fixed;"
                 ></button>
                         </div>
-                        <img class="img" src="../../assets/peso_ideal.jpg" >
+                        <img class="img" src="../assets/peso_ideal.jpg" >
                         </div>
 
                     
-                    </div>   
+   
 
 
 
-
-                    <div *ngIf="resposta == 'c'">
-                        <div id="component3" [ngClass]="{'transition': togglar, 'transition2': !togglar}" >   
+     
+                        <div id="component3" [ngClass]="{'transition': togglar && resposta == 'c', 'transition2': !togglar}" >   
                         <div class="alert alert-warning" role="alert">
                             Sobrepeso
                             <button id="button2" class="bi bi-x-circle-fill" (click)="click2()" style="height: 32px;
@@ -113,13 +108,13 @@
                         <img class="img" src="../../assets/sobrepeso.jpg" >
                         </div>
                     
-                    </div>   
 
 
 
 
-                    <div *ngIf="resposta == 'd'">
-                        <div id="component3" [ngClass]="{'transition': togglar, 'transition2': !togglar}" >   
+
+          
+                        <div id="component3" [ngClass]="{'transition': togglar && resposta == 'd', 'transition2': !togglar}" >   
                         <div class="alert alert-danger" role="alert" >
                             Obesidade grau I
                             <button id="button2" class="bi bi-x-circle-fill" (click)="click2()" style="height: 32px;
@@ -135,11 +130,11 @@
                         <img class="img" src="../../assets/obeso.jpg" >
                         </div>
                     
-                    </div>   
+            
 
 
-                    <div *ngIf="resposta == 'e'">
-                        <div id="component3" [ngClass]="{'transition': togglar, 'transition2': !togglar}" >   
+              
+                        <div id="component3" [ngClass]="{'transition': togglar && resposta == 'e', 'transition2': !togglar}" >   
                         <div class="alert alert-danger" role="alert" >
                             Obesidade grau II
                             <button id="button2" class="bi bi-x-circle-fill" (click)="click2()" style="height: 32px;
@@ -155,13 +150,11 @@
                         <img class="img" src="../../assets/obeso2.jpg" >
                         </div>
                     
-                    </div>   
+        
 
 
 
-
-                    <div *ngIf="resposta == 'f'">
-                        <div id="component3" [ngClass]="{'transition': togglar, 'transition2': !togglar}" >   
+                        <div id="component3" [ngClass]="{'transition': togglar && resposta == 'f', 'transition2': !togglar}" >   
                         <div class="alert alert-danger" role="alert" >
                             Obesidade grau III
                             <button id="button2" class="bi bi-x-circle-fill" (click)="click2()" style="height: 32px;
@@ -177,7 +170,7 @@
                         <img class="img" src="../../assets/obeso3.jpg" >
                         </div>
                     
-                    </div>   
+                     
             
 
                 
